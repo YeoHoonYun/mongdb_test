@@ -13,5 +13,5 @@ collection = db.get_collection('TestData')
 
 from_date = datetime.datetime(2020, 9, 1)
 to_date = datetime.datetime(2020, 10, 1)
-for post in collection.find({"date": {"$gte": from_date, "$lt": to_date}}):
+for post in collection.find({"type":"twitter","date": {"$gte": from_date, "$lt": to_date}}):
     print(post)
