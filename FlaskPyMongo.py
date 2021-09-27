@@ -1,5 +1,5 @@
 # $ pip install Flask-PyMongo
-# python -m pip install "pymongo[srv]"
+# python -m pip install "pymongo[srv]" Flask-PyMongo
 from flask import Flask, render_template
 from flask_pymongo import PyMongo
 
