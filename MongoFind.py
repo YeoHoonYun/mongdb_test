@@ -10,9 +10,9 @@ client = pymongo.MongoClient("mongodb+srv://admin:admin@cluster0.8y00i.mongodb.n
 db = client.get_database('MonggoTest')
 collection = db.get_collection('TestData')
 
-contents_type = "twitter"
+contents_type = "instagram"
 from_date = datetime.datetime(2020, 1, 1)
-to_date = datetime.datetime(2020, 3, 31)
+to_date = datetime.datetime(2020, 12, 31)
 
 result = list(collection.find(
   {
